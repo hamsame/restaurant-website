@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+body {
+  background: #fffde7;
+}
+
+.container {
+  text-align: center;
+}
+
+/* @media (max-width: 768px) {
+
+} */
+
+.container h1 {
+  line-height: 1.6;
+}
+
+.p-5 {
+  padding: 5rem 0;
+}
+
+#img-1 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#img-2 {
+  width: 60%;
+  margin: 0 auto;
+}
+#img-3 {
+  width: 60%;
+  margin: 0 auto;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav {
+  padding: 3rem 0;
+  min-width: 100%;
+}
+
+nav .container {
+  width: 90%;
+  margin: 0 auto !important;
+  display: grid;
+  grid-template-columns: auto 4fr auto;
+}
+
+nav .container .nav {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .container .nav li {
+  margin: 0 3%;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+  font-size: 1.3rem !important;
+}
+
+.nav-btn {
+  color: white;
+  background: black;
+  padding: 1.5rem 1.5rem;
+}
+
+.flex {
+  width: 90%;
+  margin: 3vh auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.flex p,
+.flex h5 {
+  width: 80% !important;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .flex p,
+  .flex h5 {
+    font-size: 1.2rem;
+  }
+
+  .flex p {
+    padding-bottom: 2rem;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  #img-2,
+  #img-3 {
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+    grid-column: 3;
+  }
+  nav .container {
+    padding: 1rem;
+    border: none;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 3rem !important;
+    margin: 0 auto;
+  }
+
+  nav .container .nav {
+    margin: 0 auto;
+    grid-column: 2;
+    display: block;
+    grid-row: 2;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav .container .nav li {
+    margin: 2vh 0;
+  }
+
+  nav .container a {
+    grid-column: 2;
+    grid-row: 3;
+    padding: 1rem 0.75rem;
+  }
+
+  nav .container .nav-btn,
+  nav .container .nav {
+    display: none;
+  }
+
+  nav .container .nav.show,
+  nav .container .nav-btn.show {
+    display: block;
+  }
+}
