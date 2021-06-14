@@ -25,7 +25,7 @@ const Navbar = () => {
         </div>
         <ul className='nav'>
           <li>
-            <Link to='/'>Home</Link>
+            <Link to='/menu'>Menu</Link>
           </li>
           <li>
             <Link to='/about'>About</Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
         </ul>
 
         <Link to='/reservation' className='nav-btn'>
-          Make A Reservation
+          Make a Reservation
         </Link>
       </div>
     </nav>
