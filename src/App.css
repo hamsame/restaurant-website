@@ -206,68 +206,63 @@ nav .container .nav li {
   font-size: 1.2rem;
 }
 
-.custom-select {
-  position: relative;
+#reservation {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
-/* .custom-select select {
-  display: none;
+#reservation img {
+  width: 100%;
+}
+
+#reservation form {
+  padding: 2rem 0;
+  /* background-color: red; */
+  text-align: center;
+}
+
+#reservation form select {
+  width: 60%;
+  background: #fffde7;
+  border: 1px solid black;
+  padding: 1rem 0.5rem;
+}
+
+#reservation form input {
+  margin: 2vh 2%;
+  width: 40%;
+  padding: 1rem;
+  background: #fffde7;
+  border: 1px solid black;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+}
+
+/* #reservation form input * {
+  color: white;
 } */
 
-.select-selected {
-  background-color: DodgerBlue;
-}
-
-.select-selected:after {
-  position: absolute;
-  content: '';
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
-
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-
-.select-items div,
-.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-}
-
-/* Style items (options): */
-.select-items {
-  position: absolute;
-  background-color: DodgerBlue;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-/* Hide the items when the select box is closed: */
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover,
-.same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
+#book {
+  display: inline-block;
+  margin: 5vh 0;
+  background: black;
+  color: #fff;
+  padding: 1rem 0.5rem;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
   .contact-section,
-  .menu-grid {
+  .menu-grid,
+  #reservation {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  #reservation img {
+    grid-row: 1;
   }
 
   .contact-section {

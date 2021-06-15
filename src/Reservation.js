@@ -7,7 +7,7 @@ const Reservation = () => {
   return (
     <div>
       <Navbar />
-      <div className='reservation'>
+      <div id='reservation'>
         <div>
           <h2>Make a reservation</h2>
           <p>
@@ -19,7 +19,7 @@ const Reservation = () => {
             leo. Duis ultricies lacus sed turpis tincidunt id.
           </p>
           <form>
-            <div className='custom-select' style={{ width: '200px' }}>
+            <div className='custom-select'>
               <select>
                 <option value='0' selected>
                   1 Person
@@ -36,8 +36,15 @@ const Reservation = () => {
                 <option value='10'>Larger Party</option>
               </select>
             </div>
+            <input type='date' name='' id='' />
+            <input type='time' name='' id='' />
+            <br />
+            <a href='#!' id='book'>
+              Book Table
+            </a>
           </form>
         </div>
+        <img src='/images/pasta.jpeg' alt='' />
       </div>
     </div>
   )
