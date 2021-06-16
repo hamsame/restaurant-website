@@ -1,6 +1,6 @@
 # restaurant-website
 
-A restaurant website I have built using create-react-app. I used implemented Google Maps Api, react router and JSX styling.
+A restaurant website I have built using create-react-app. I implemented Google Maps Api, react router and JSX styling.
 
 # Lessons Learned
 I had to learn how to use Google Maps Api and react router.
